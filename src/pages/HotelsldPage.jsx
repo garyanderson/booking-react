@@ -10,7 +10,7 @@ import '../components/style/HotelIdPage.css'
 const HotelsldPage = () => {
   const { id } = useParams();
 
-  const url = `https://booking-node.onrender.com/${id}`;
+  const url = `http://localhost:8080/hotels/${id}`;
   const [hotel, getHotel] = useFetch(url);
 
   useEffect(() => {
