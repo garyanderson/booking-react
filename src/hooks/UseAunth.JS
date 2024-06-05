@@ -10,7 +10,7 @@ const UseAunth = () => {
 
     //register
     const registerUser = (data) => {
-        const url = 'https://booking-node.onrender.com/hotels/users'
+        const url = 'https://booking-node.onrender.com/users'
         axios.post(url, data)
         .then(res => {
             console.log(res.data)
@@ -23,7 +23,7 @@ const UseAunth = () => {
     //login
 
     const loginUser = (data) =>{
-        const url = 'https://booking-node.onrender.com/users/login'
+        const url = 'http://localhost:8080/users/login'
         axios.post(url, data)
         .then(res =>{
             localStorage.setItem('token', res.data.token)

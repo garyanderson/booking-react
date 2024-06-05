@@ -8,7 +8,7 @@ const FormReserve = ({ hotelId }) => {
   const { response, getApi, createApi, deleteApi, updateApi} = UseCrud()
 
   const submit = data => {
-    const url = 'https://booking-node.onrender.com/hotels'
+    const url = 'http://localhost:8080/booking'
     data.hotelId = Number(hotelId)
     createApi(url, data)
   } 

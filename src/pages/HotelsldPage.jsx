@@ -10,13 +10,13 @@ import '../components/style/HotelIdPage.css'
 const HotelsldPage = () => {
   const { id } = useParams();
 
-  const url = `https://booking-node.onrender.com/hotels/${id}`;
+  const url = `https://booking-node.onrender.com/${id}`;
   const [hotel, getHotel] = useFetch(url);
 
   useEffect(() => {
     getHotel();
   }, [id]);
-
+console.log(hotel)
   return (
     <div className="hotel">
       <h2 className="hotel__name">{hotel?.name}</h2>

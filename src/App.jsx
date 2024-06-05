@@ -13,6 +13,7 @@ import ProtectedRoutes from './pages/ProtectedRoutes'
 
 //bakend academlo = https://booking-node.onrender.com/
 //bakend render = https://booking-node.onrender.com
+//backrnd localhost = http://localhost:8080/
 
 function App() {
 

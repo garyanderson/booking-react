@@ -8,14 +8,14 @@ const formReviews = ({ reserveSelected, setReserveSelected, }) => {
     const { response, getApi, createApi, deleteApi, updateApi  } = UseCrud()
 
     const submit = data => {
-        const url ='https://booking-node.onrender.com/hotels/1reviews'
+        const url ='http://localhost:8080/reviews'
         data.hotelId = reserveSelected?.hotel.id
         data.rating = data.rating
         createApi(url, data)
         setReserveSelected()
         
     }
-
+console.log(reserveSelected)
   return (
     <article>
         <h3>reserve</h3>

@@ -6,7 +6,7 @@ import './style/Filters.css'
 
 const CategoryFilter = () => {
 
-    const url= 'https://booking-node.onrender.com/cities'
+    const url= 'http://localhost:8080/cities'
      const [cities, getCities] = useFetch(url);
 
    useEffect (() =>{
@@ -21,9 +21,9 @@ const CategoryFilter = () => {
 
 
     if (id) {
-        url =`https://booking-node.onrender.com/hotels/1hotels?cityId=${id}`;
+        url =`https://booking-node.onrender.com?cityId=${id}`;
     } else{
-        url = 'https://booking-node.onrender.com/hotels/1hotels';
+        url = 'https://booking-node.onrender.com';
     }
      dispatch (getHotelsThunk(url));
    };

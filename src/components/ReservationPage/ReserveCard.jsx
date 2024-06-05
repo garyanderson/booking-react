@@ -1,6 +1,6 @@
 
 
-const ReserveCard = ({ reserve, setReserveSelected, deleteApi }) => {
+const ReserveCard = ({ reserve, setReserveSelected, reserveSelected, deleteApi }) => {
     
     const checkIn = new Date(reserve.checkIn)
     const checkOut = new Date(reserve.checkOut) 
@@ -12,15 +12,17 @@ const ReserveCard = ({ reserve, setReserveSelected, deleteApi }) => {
             reservationDays,
             subtotal: reserve.hotel.price * reservationDays
         }
+        
         setReserveSelected(obj)
+        //console.log(reserve)
     }
 
     const handleDeletBooking = () => {
-        const url = `https://hotels-api.academlo.tech/reviews/${reserve.id}`
+        const url = `http://localhost:8080/reviews/${reserve.id}`
         deleteApi(url, reserve.id)
     }
 
-
+    console.log(reserveSelected)
   return (
     <article>
         <header>

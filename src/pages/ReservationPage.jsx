@@ -9,10 +9,10 @@ const ReservationPage = () => {
     const {response, getApi, createApi, deleteApi, updateApi} = UseCrud()    
 
     useEffect(() => {
-        const url = 'https://booking-node.onrender.com/hotels/1s'
+        const url = 'http://localhost:8080/booking'
         getApi(url)
     }, [])
-
+console.log(reserveSelected)
   return (
     <section>
        <FormReviews 
@@ -27,6 +27,7 @@ const ReservationPage = () => {
                 key={reserve.id}
                 reserve={reserve}
                 setReserveSelected={setReserveSelected}
+                reserveSelected={reserveSelected}
                 deleteApi={deleteApi}
                 />
               ))              
