@@ -1,0 +1,42 @@
+.login {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login__name {
+    margin-bottom: 3em;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+.form__login {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.login__label {
+    display: flex;
+    flex-flow: column wrap;
+    width: 65%;
+}
+.login__span {
+    padding-left: 0.5em;
+    font-weight: 500;
+}
+.login__input {
+    margin-bottom: 1em;
+}
+.login__btn {
+    margin-top: 1em;
+    width: 65%;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &:active {
+            transform: scale(1);
+        }
+}

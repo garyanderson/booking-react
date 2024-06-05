@@ -1,0 +1,25 @@
+.hotel  {
+    width: 100%;
+}
+.hotel__name, .hotel__rating {
+    text-align: center;
+}
+.hotel__rating {}
+.hotel__info {
+margin-bottom: 1em;
+}
+.hotel__dats {
+    margin-bottom: 1em;
+}
+.bx {
+    color: blue;
+}
+.hotel__address {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.hotel__description {}
+.hotel__message{}
+.hotel__link {
+    color: blue;
+}
